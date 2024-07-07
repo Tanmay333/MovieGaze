@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-    <title>MOVIES</title>
+    <title>The Boys | MOVIES</title>
   </head>
 
   <body>
@@ -65,9 +65,9 @@
         </div>
         <div class="btns">
           <a href="#" id="play">Watch <i class="bi bi-play-fill"></i></a>
-          <a href="#" id="download_main">
-            <i class="bi bi-cloud-arrow-down-fill"></i
-          ></a>
+          <a href="#" download="The Boys 480ph" id="low_q">480ph</a>
+          <a href="#" download="The Boys 720ph" id="medium_q">720ph</a>
+          <a href="#" download="The Boys 1080ph" id="high_q">1080ph</a>
         </div>
       </div>
       <section>
@@ -92,5 +92,26 @@
       </section>
     </header>
     <script src="script.js"></script>
+    <script>
+      fetch(json_url)
+        .then((Response) => Response.json())
+        .then((data) => {
+          let movie_array = data.filter((ele) => {
+            return ele.name === "The Boys";
+          });
+
+          document.getElementById("title").innerText = movie_array[0].name;
+          // document.getElementsByTagName('video')[0].setAttribute('src', movie_array[0].trailer)
+          // document.getElementsByTagName('video')[0].play();
+          document.getElementById("low_q").href = movie_array[0].low;
+          document.getElementById("medium_q").href = movie_array[0].medium;
+          document.getElementById("high_q").href = movie_array[0].high;
+          document.getElementById("gen").innerText = movie_array[0].genre;
+          document.getElementById("date").innerText = movie_array[0].date;
+          document.getElementById(
+            "rate"
+          ).innerHTML = `<span>IMDB</span><i class="bi bi-star-fill"></i> ${movie_array[0].imdb}`;
+        });
+    </script>
   </body>
 </html>

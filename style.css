@@ -4,6 +4,7 @@
   margin: 0%;
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
   height: 100vh;
@@ -18,20 +19,22 @@ header {
   position: relative;
   width: 80%;
   height: 90%;
-  /* border: 1px solid white; */
+  /* border: 1px solid #fff; */
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0px 10px 25px -8px #000;
 }
+
 header::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(img/money\ heist1.jpg) no-repeat center/cover;
+  background: url("img/money heist1.jpg") no-repeat center center/cover;
   opacity: 0.6;
   z-index: -1;
 }
+
 header::after {
   content: "";
   position: absolute;
@@ -40,6 +43,7 @@ header::after {
   background: linear-gradient(180deg, transparent, #000);
   z-index: -1;
 }
+
 header video {
   position: absolute;
   width: 120%;
@@ -47,6 +51,7 @@ header video {
   top: -47%;
   z-index: -1;
 }
+
 header nav {
   width: 100%;
   height: 10%;
@@ -74,9 +79,10 @@ header nav .logo_ul ul {
   list-style: none;
 }
 
-header nav .logo_ul li {
+header nav .logo_ul ul li {
   padding: 3px 15px;
 }
+
 header nav .logo_ul ul li a {
   text-decoration: none;
   color: #fff;
@@ -84,6 +90,7 @@ header nav .logo_ul ul li a {
   font-weight: bold;
   transition: 0.3s linear;
 }
+
 header nav .logo_ul ul li a:hover {
   color: rgb(255, 255, 255, 0.7);
 }
@@ -100,40 +107,46 @@ header nav .search_user input {
   border-radius: 20px;
   border: none;
   outline: none;
-  background: rgb(255, 255, 255 0.3);
+  background: rgb(255, 255, 255, 0.3);
   color: #fff;
   margin-right: 20px;
 }
-header nav .search_user input ::placeholder {
+
+header nav .search_user input::placeholder {
   color: #fff;
 }
+
 header nav .search_user img {
   width: 23px;
   height: 23px;
   border-radius: 50%;
 }
+
 header nav .search_user .search {
   position: absolute;
   width: 320px;
   height: 270px;
   /* border: 1px solid #fff; */
   right: 0;
-  top: 36px;
+  top: 40px;
   z-index: 99999;
   overflow-y: auto;
 }
+
 header nav .search_user .search::-webkit-scrollbar {
   width: 5px;
-  background: rgb(255, 255, 255 0.3);
+  background: rgb(255, 255, 255, 0.3);
   border-radius: 5px;
   visibility: hidden;
 }
+
 header nav .search_user .search::-webkit-scrollbar-thumb {
   width: 5px;
-  background: rgb(255, 255, 255 0.4);
+  background: rgb(255, 255, 255, 0.4);
   border-radius: 5px;
   visibility: hidden;
 }
+
 header nav .search_user .search:hover::-webkit-scrollbar {
   visibility: visible;
 }
@@ -153,6 +166,7 @@ header nav .search_user .search .card {
   text-decoration: none;
   display: none;
 }
+
 header nav .search_user .search .card::before {
   content: "";
   position: absolute;
@@ -163,16 +177,19 @@ header nav .search_user .search .card::before {
   border-radius: 5px;
   z-index: -1;
 }
+
 header nav .search_user .search .card img {
   width: 28px;
   height: 90%;
   border-radius: 2px;
   margin-left: 8px;
 }
+
 header nav .search_user .search .card .cont {
   margin-left: 10px;
   color: #fff;
 }
+
 header nav .search_user .search .card .cont h3 {
   font-size: 15px;
   line-height: 25px;
@@ -181,26 +198,12 @@ header nav .search_user .search .card .cont h3 {
   white-space: nowrap;
   width: 250px;
 }
-header nav .search_user .search .card .cont h3 {
-  font-size: 15px;
-  line-height: 25px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 250px;
-}
-header nav .search_user .search .card .cont h3 {
-  font-size: 15px;
-  line-height: 25px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 250px;
-}
+
 header nav .search_user .search .card .cont p {
   font-size: 10px;
-  color: rgb(255, 255, 255 0.8);
+  color: rgb(255, 255, 255, 0.8);
 }
+
 header nav .search_user .search .card .cont span {
   background: yellow;
   color: #000;
@@ -208,20 +211,24 @@ header nav .search_user .search .card .cont span {
   margin: 0px 5px 0px 10px;
   font-weight: 500;
 }
+
 header .content {
   position: relative;
   color: #fff;
   margin-top: 50px;
   padding-left: 50px;
 }
+
 header .content h1 {
   font-size: 50px;
 }
+
 header .content p {
-  font-size: 10px;
+  font-size: 11px;
   width: 350px;
-  /* word-break: break-all; */
+  word-break: break-all;
 }
+
 header .content .details {
   display: flex;
   align-items: center;
@@ -229,26 +236,30 @@ header .content .details {
 }
 
 header .content .details h6 {
-  color: rgb(255, 255, 255 0.8);
+  color: rgb(255, 255, 255, 0.8);
   font-size: 10px;
   margin-right: 10px;
 }
+
 header .content .details h5 {
   color: rgb(142, 230, 48);
   font-size: 10px;
   margin-right: 10px;
 }
+
 header .content .details h4 {
   color: #fff;
   font-size: 10px;
   margin-right: 10px;
 }
+
 header .content .details h3 {
   color: #fff;
-  font-size: 10px;
   display: flex;
   align-items: center;
+  font-size: 10px;
 }
+
 header .content .details h3 span {
   background: yellow;
   color: #000;
@@ -256,25 +267,29 @@ header .content .details h3 span {
   margin: 0px 5px 0px 5px;
   font-weight: 500;
 }
-header .content .details h3 fa-star {
+
+header .content .details h3 i {
   margin-right: 5px;
 }
-header .content .buttons {
+
+header .content .btns {
   margin-top: 20px;
   display: flex;
   align-items: center;
 }
-header .content .buttons a {
+
+header .content .btns a {
   padding: 8px 12px;
   font-size: 15px;
   font-weight: 600;
-  background: linear-gradient(900deg, #00bdff, #0079ff);
+  background: linear-gradient(90deg, #00bdff, #0079ff);
   border-radius: 5px;
   color: #fff;
   margin-left: 10px;
   text-decoration: none;
   animation: button 1s linear infinite;
 }
+
 @keyframes button {
   0% {
     background: linear-gradient(0deg, #00bdff, #0079ff);
@@ -301,6 +316,7 @@ header .content .buttons a {
     background: linear-gradient(360deg, #00bdff, #0079ff);
   }
 }
+
 header section {
   position: absolute;
   width: 100%;
@@ -310,7 +326,7 @@ header section {
   color: #fff;
 }
 
-header section .shortcards {
+header section .cards {
   position: relative;
   width: 100%;
   height: 200px;
@@ -321,11 +337,12 @@ header section .shortcards {
   overflow-x: auto;
   scroll-behavior: smooth;
 }
-header section .shortcards::-webkit-scrollbar {
+
+header section .cards::-webkit-scrollbar {
   display: none;
 }
 
-header section .shortcards .card {
+header section .cards .card {
   position: relative;
   min-width: 130px;
   height: 180px;
@@ -333,22 +350,25 @@ header section .shortcards .card {
   border-radius: 8px;
   margin-right: 10px;
   background: #000;
-  transition: 0.3sec linear;
+  transition: 0.3s linear;
 }
-header section .shortcards .card .poster {
+
+header section .cards .card .poster {
   width: 100%;
   height: 100%;
   border-radius: 8px;
   position: relative;
 }
-header section .shortcards .card:hover {
+
+header section .cards .card:hover {
   min-width: 300px;
   overflow: hidden;
 }
-header section .shortcards .card .rec-card {
+
+header section .cards .card .rest_card {
   position: absolute;
-  height: 100%;
   width: 100%;
+  height: 100%;
   border-radius: 8px;
   left: 0;
   top: 0;
@@ -356,14 +376,16 @@ header section .shortcards .card .rec-card {
   opacity: 0;
   transition: 1s linear;
 }
-header section .shortcards .card .rec-card img {
+
+header section .cards .card .rest_card img {
   position: relative;
-  height: 100%;
   width: 100%;
+  height: 100%;
   border-radius: 8px;
   z-index: -1;
 }
-header section .shortcards .card .rec-card::after {
+
+header section .cards .card .rest_card::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -373,7 +395,8 @@ header section .shortcards .card .rec-card::after {
   bottom: 0;
   z-index: -1;
 }
-header section .shortcards .card .rec-card .cont {
+
+header section .cards .card .rest_card .cont {
   position: absolute;
   width: 100%;
   bottom: 10px;
@@ -382,25 +405,26 @@ header section .shortcards .card .rec-card .cont {
   padding: 0px 20px;
 }
 
-header section .shortcards .card .rec-card .cont .sub {
+header section .cards .card .rest_card .cont .sub {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header section .shortcards .card .rec-card .cont .sub p {
+header section .cards .card .rest_card .cont .sub p {
   font-size: 12px;
   font-weight: 400;
   color: rgb(255, 255, 255, 0.7);
 }
 
-header section .shortcards .card .rec-card .cont .sub h3 {
+header section .cards .card .rest_card .cont .sub h3 {
   color: #fff;
   font-size: 12px;
   display: flex;
   align-items: center;
 }
-header section .shortcards .card .rec-card .cont .sub h3 span {
+
+header section .cards .card .rest_card .cont .sub h3 span {
   background: yellow;
   color: #000;
   padding: 0px 3px;
@@ -409,22 +433,22 @@ header section .shortcards .card .rec-card .cont .sub h3 span {
   border-radius: 2px;
 }
 
-header section .shortcards .card .rec-card .cont .sub h3 i {
+header section .cards .card .rest_card .cont .sub h3 i {
   margin-right: 3px;
 }
 
-header section .shortcards .card:hover .rec-card {
+header section .cards .card:hover .rest_card {
   opacity: 1;
 }
 
-header section .fa-chevron-left,
-.fa-chevron-right {
+header section .bi-chevron-left,
+.bi-chevron-right {
   position: absolute;
   top: 50%;
   left: 3%;
-  height: 25px;
   width: 25px;
-  background: rgba(255, 255, 255, 0.3);
+  height: 25px;
+  background: rgb(255, 255, 255, 0.3);
   color: #fff;
   display: flex;
   align-items: center;
@@ -436,13 +460,60 @@ header section .fa-chevron-left,
   z-index: 999999999;
   opacity: 0;
 }
-header section .fa-chevron-right {
+
+header section .bi-chevron-right {
   left: unset;
   right: 3%;
 }
-header section:hover .fa-chevron-right {
+
+header section:hover .bi-chevron-right {
   opacity: 1;
 }
-header section:hover .fa-chevron-left {
+
+header section:hover .bi-chevron-left {
   opacity: 1;
+}
+
+@media screen and (max-width: 1250px) {
+  header video {
+    position: absolute;
+    width: 200%;
+    height: 180%;
+  }
+}
+
+@media screen and (max-width: 788px) {
+  header {
+    width: 100%;
+    height: 100%;
+  }
+  header nav {
+    padding: 0px 10px;
+    height: 15%;
+  }
+  header nav .logo_ul ul {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+  }
+  header nav .logo_ul ul li {
+    padding: 3px 5px;
+  }
+  header nav .logo_ul ul li a {
+    font-size: 10px;
+  }
+  header .content {
+    padding-left: 10px;
+  }
+  header section {
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 788px) {
+  header video {
+    position: absolute;
+    width: 520%;
+    height: 180%;
+  }
 }
